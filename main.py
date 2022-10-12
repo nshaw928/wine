@@ -15,10 +15,10 @@ df = df[['country', 'points', 'price', 'province', 'variety']]
 df = df.dropna()
 
 # Define features
-features = ['price']
+features = ['points']
 
 # Set variables
-y = df.points
+y = df.price
 X = df[features]
 
 # Split into training and validation sets
